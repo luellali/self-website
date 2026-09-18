@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Design work — Luella’s archive</title>
+  <link rel="stylesheet" href="./home.css"><link rel="stylesheet" href="./archive.css"><link rel="stylesheet" href="./project-detail.css">
+<script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script></head>
+<body>
+<main class="page archive-page" data-theme="design">
+  <header><a class="logo" href="./">luella.</a><small>Independent mind. Curious by design.</small><a class="back-home" href="./">↖ 返回首页</a></header>
+  <nav class="tabs archive-tabs" aria-label="作品集栏目">
+    <a class="tab" data-theme="design" href="./design-work.html" aria-current="page"><small>01</small><span class="label">Design work<span class="separator"> · </span><span>设计作品</span></span><span>↗</span></a>
+    <a class="tab" data-theme="course" href="./course-projects.html"><small>02</small><span class="label">Course projects<span class="separator"> · </span><span>课程作业</span></span><span>+</span></a>
+    <a class="tab" data-theme="explorations" href="./?theme=explorations"><small>03</small><span class="label">3D explorations<span class="separator"> · </span><span>三维建模</span></span><span>+</span></a>
+    <a class="tab" data-theme="about" href="./?theme=about"><small>04</small><span class="label">About me<span class="separator"> · </span><span>关于我</span></span><span>+</span></a>
+  </nav>
+  <section class="archive" aria-labelledby="archive-title">
+    <div class="archive-heading">
+      <div class="folder-index"><span>PERSONAL ARCHIVE</span><strong>01</strong><span>DESIGN WORK<br>设计作品档案</span></div>
+      <div class="heading-copy"><p class="eyebrow">A COLLECTION OF IDEAS & EXPLORATIONS</p><h1 id="archive-title">Selected<br><em>design work.</em></h1><p class="archive-intro">把想法展开，把过程收藏。<br>这里是我的设计档案，每一张封面都是一个故事的入口。</p></div>
+      <div class="archive-stamp" aria-hidden="true">OPEN<br>FOR IDEAS<span>✳</span></div>
+    </div>
+    <div class="archive-toolbar"><div class="filters" role="group" aria-label="筛选项目类型"><button type="button" data-filter="all" aria-pressed="true">全部档案 <span>08</span></button><button type="button" data-filter="visual" aria-pressed="false">视觉设计</button><button type="button" data-filter="interactive" aria-pressed="false">交互设计</button><button type="button" data-filter="industrial" aria-pressed="false">工业设计</button></div><span class="result-count" role="status">08 FILES</span></div>
+    <div class="project-grid" id="projects"></div>
+    <div class="archive-end"><span>END OF THIS FOLDER</span><span class="end-star" aria-hidden="true">✳</span><a href="#archive-title">回到目录顶部 ↑</a></div>
+    <p class="sample-note">8 张项目封面已同步至作品集，FILE 01–07 均可进入完整项目页面。</p>
+  </section>
+  <footer><span>PORTFOLIO — 2026</span><span>Made with curiosity.</span><span>FOLDER 01 / DESIGN WORK</span></footer>
+</main>
+<dialog class="cover-dialog" aria-labelledby="preview-title"><button class="close-preview" type="button" aria-label="关闭封面预览">关闭 ×</button><div class="preview-art"></div><div class="preview-caption"><span class="eyebrow">COVER PREVIEW / 封面预览</span><h2 id="preview-title"></h2><p>示例封面 · 正式项目内容待补充</p></div></dialog>
+<script type="module" src="./archive.js"></script>
+</body></html>

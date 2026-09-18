@@ -1,0 +1,11 @@
+@font-face{font-family:Inter;src:url('./assets/inter-regular.ttf') format('truetype');font-weight:400;font-display:swap}
+*{box-sizing:border-box}
+html{background:#000}
+body{margin:0;min-width:320px;background:#000;color:#fff;font-family:Inter,'PingFang SC',sans-serif}
+.theme-project{width:100%;min-height:100svh;background:#000;overflow:hidden}
+.theme-artwork{display:block;width:100%;height:auto;max-width:none;background:#000}.interactive-cover{position:relative;isolation:isolate;animation:project-reveal .9s cubic-bezier(.2,.75,.2,1) both}.external-project-button{position:absolute;z-index:1;left:83.4896%;top:82.963%;width:11.5104%;height:5.1852%;display:flex;align-items:center;justify-content:center;border-radius:999px;background:linear-gradient(121deg,#37eeb4 0%,#4ecffa 26%,#45cffd 67%,#ccedf5 97%);color:#fff;text-decoration:none;font-size:clamp(9px,1.3vw,25px);line-height:1;white-space:nowrap;box-shadow:0 0 0 0 #4ecffa66;transition:transform .2s,box-shadow .25s,filter .2s}.external-project-button:hover{transform:scale(1.05);filter:brightness(1.08);box-shadow:0 0 0 10px #4ecffa22}.external-project-button:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.project-back{position:fixed;z-index:2;top:24px;left:24px;display:flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid #ffffff55;border-radius:999px;background:#0008;backdrop-filter:blur(8px);color:#fff;text-decoration:none;font-size:11px;letter-spacing:.05em;opacity:.56;transition:opacity .2s,transform .2s,background .2s}.project-back:hover,.project-back:focus-visible{opacity:1;transform:translateX(-3px);background:#000c}.project-back:focus-visible{outline:2px solid #75fbd4;outline-offset:3px}
+.project-index{position:fixed;right:24px;bottom:18px;margin:0;color:#fff;font-size:9px;letter-spacing:.14em;opacity:.35}
+@keyframes project-reveal{from{opacity:0;transform:scale(1.018)}to{opacity:1;transform:scale(1)}}
+@media(max-aspect-ratio:16/9){.theme-project{min-height:auto}.project-back{top:14px;left:14px}.project-index{right:14px;bottom:12px}}
+@media(prefers-reduced-motion:reduce){.interactive-cover{animation:none}.project-back,.external-project-button{transition:none}}

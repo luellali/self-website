@@ -1,0 +1,11 @@
+@font-face{font-family:Inter;src:url('./assets/inter-regular.ttf') format('truetype');font-weight:400;font-display:swap}
+*{box-sizing:border-box}
+html{background:#f5f5ef}
+body{margin:0;min-width:320px;background:#f5f5ef;color:#134f45;font-family:Inter,'PingFang SC',sans-serif}
+.songyang-project{width:100%;min-height:100svh;overflow:hidden;background:#f5f5ef}
+.project-board{display:block;width:100%;height:auto;max-width:none;background:#f5f5ef}.project-board:first-child{animation:project-reveal .9s cubic-bezier(.2,.75,.2,1) both}
+.project-back{position:fixed;z-index:2;top:24px;left:24px;display:flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid #134f4538;border-radius:999px;background:#ffffffe6;backdrop-filter:blur(10px);color:#134f45;text-decoration:none;font-size:11px;letter-spacing:.05em;opacity:.7;transition:opacity .2s,transform .2s,background .2s}.project-back:hover,.project-back:focus-visible{opacity:1;transform:translateX(-3px);background:#fff}.project-back:focus-visible{outline:2px solid #a32c42;outline-offset:3px}
+.project-index{position:fixed;z-index:2;right:24px;bottom:18px;margin:0;padding:8px 11px;border-radius:999px;background:#ffffffe6;backdrop-filter:blur(10px);color:#134f45;font-size:9px;letter-spacing:.14em;opacity:.58}
+@keyframes project-reveal{from{opacity:0;transform:scale(1.018)}to{opacity:1;transform:scale(1)}}
+@media(max-width:600px){.project-back{top:14px;left:14px}.project-index{right:14px;bottom:12px}}
+@media(prefers-reduced-motion:reduce){.project-board{animation:none}.project-back{transition:none}}
