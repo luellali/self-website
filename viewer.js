@@ -8,8 +8,7 @@ const viewport = document.querySelector('.viewport');
 const status = document.querySelector('.status');
 const motionButton = document.querySelector('.motion-button');
 const tabs = [...document.querySelectorAll('.tab')];
-const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-const state = { hover:false, focus:false, manual:false, reduced:reduced.matches, hidden:document.hidden };
+const state = { hover:false, focus:false, manual:false, reduced:false, hidden:document.hidden };
 let angle=0, model, previous=performance.now(), lastStatus='';
 let turn=null, selectedFace=null;
 function faceTab(tab) {
@@ -25,7 +24,7 @@ function updateStatus() {
   if (!model) return;
   const paused = isPaused(state);
   const label = paused ? 'Paused · move off the tab to explore' : 'Slowly rotating · hover a tab to pause';
-  const value = turn ? 'Turning to selected category…' : state.manual ? 'Paused' : state.reduced ? 'Reduced motion · rotation off' : label;
+  const value = turn ? 'Turning to selected category…' : state.manual ? 'Paused · click play to rotate' : label;
   if (value !== lastStatus) { status.textContent=value; lastStatus=value; }
   viewport.dataset.rotation=turn?'turning':paused?'paused':'rotating';
 }
@@ -45,7 +44,6 @@ motionButton.addEventListener('click',()=>{
   motionButton.textContent=state.manual?'▶':'Ⅱ';
   motionButton.setAttribute('aria-label',state.manual?'Resume rotation':'Pause rotation');updateStatus();
 });
-reduced.addEventListener('change',e=>{state.reduced=e.matches;updateStatus()});
 document.addEventListener('visibilitychange',()=>{state.hidden=document.hidden;previous=performance.now();updateStatus()});
 
 try {
