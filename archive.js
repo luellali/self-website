@@ -6,7 +6,7 @@ const projects = [
   {id:'05',category:'visual',label:'视觉设计',fileLabel:'视觉设计/地方元素重构',title:'地方元素重构设计',kind:'SONGYANG LOCAL VISUAL SYSTEM',tag:'商业',image:'./assets/project-05-cover.png',href:'./songyang-project.html'},
   {id:'06',category:'visual',label:'视觉设计',fileLabel:'视觉设计/品牌VI设计',title:'徐记点心局品牌VI设计',kind:'BRAND IDENTITY & PACKAGING',tag:'商业',image:'./assets/project-06-cover.png',href:'./brand-project.html'},
   {id:'07',category:'visual',label:'课程作业',fileLabel:'课程作业/衍生品设计',title:'乐高乐园衍生品设计',kind:'LEGOLAND DERIVATIVE DESIGN',tag:'校企合作',image:'./assets/project-07-cover.png',href:'./lego-project.html'},
-  {id:'08',category:'visual',label:'品牌设计',fileLabel:'品牌设计/品牌物料',title:'蔚来实习作品集',kind:'SERVICE DESIGN',tag:'示例',image:'./assets/project-08-cover.png'},
+  {id:'08',category:'visual',label:'品牌设计',fileLabel:'品牌设计/品牌物料',title:'蔚来实习作品集',kind:'SERVICE DESIGN',tag:'实习',image:'./assets/project-08-cover.png',href:'./nio-project.html'},
 ];
 const grid=document.querySelector('#projects');
 const dialog=document.querySelector('.cover-dialog');
